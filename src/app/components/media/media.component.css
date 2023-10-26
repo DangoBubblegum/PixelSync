@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Mono';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  --dot-bg: #fff;
+  --dot-color: #000;
+  --dot-size: 2px;
+  --dot-space: 22px;
+  background:
+    radial-gradient(closest-side, #ffffff00, #ffffff),
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 640px;
+  background: #fff;
+  border-radius: 2px;
+  border: solid 2px #121212;
+  box-shadow: 4px 4px #121212;
+}
+
+
+
+.header_container {
+  width: 100%;
+  padding: 20px;
+}
+
+.Title_container {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.main_container {
+  display: flex;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 80px;
+  height: 500px;
+}
+
+#Input_Url {
+  font-size: 20px;
+  font-weight: 700;
+  width: 500px;
+  height: 50px;
+  padding-left: 10px;
+  transform: rotate(-90deg);
+  border-radius: 2px;
+  border: solid 2px #121212;
+  box-shadow: 4px 4px #121212;
+}
+
+.results_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  height: 500px;
+}
+
+.cover_song {
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  border: solid 2px #121212;
+  box-shadow: 4px 4px #121212;
+}
+
+.search_results {
+  padding-top: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+ul {
+  overflow-y: auto;
+  height: 240px;
+  gap: 10px;
+}
+
+.item_result {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 10px;
+  gap: 10px;
+  margin: 5px 0;
+  width: 245px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: solid 2px #121212;
+  box-shadow: 4px 4px #121212;
+}
+
+
+.result_cover_song {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  border: solid 2px #121212;
+}
+
+ul::-webkit-scrollbar {
+  width: 0px;
+}
